@@ -59,3 +59,10 @@ print(person_name.keys())
 print(person_name.values())
 print(person_name['first'])
 print(person_name['last'])
+
+while True:
+    print('\n请告诉我你的名字！')
+    f_name=input('First_name:')
+    l_name=input('Last_name:')
+    formatted_name = get_formatted_name_2(f_name,l_name)
+    print('\n早上好， '+formatted_name+' .')
