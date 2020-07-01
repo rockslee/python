@@ -1,3 +1,13 @@
+def greet_user(names):
+    """向列表中每一位用户都发出问候"""
+    for name in  names:
+        msg = 'Hello '+ name.title()+'!'
+        print(msg)
+usernames = ['rockslee','tony','sentu']
+greet_user(usernames)
+
+
+
 def greet_user(username="lilei",sex="boy"):
     """显示简单的问候语"""
     print(username.title()+" is "+sex+"!")
