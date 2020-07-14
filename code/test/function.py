@@ -1,3 +1,16 @@
+def make_pizza(size,*toppings):
+    """
+    概述要制作的比萨
+    :param size:
+    :param topping:
+    :return:
+    """
+    print('\nMaking a '+str(size)+'-inch pizza with the following topping:')
+    for topping in toppings:
+        print('-'+topping)
+make_pizza(16,'pepperoni')
+make_pizza(12,'mushrooms','green peppers','extra cheese')
+print("#####################我是分割符#####################")
 def show_magicians(magicians_name):
     """
     将所有魔术师的名字打印出来
