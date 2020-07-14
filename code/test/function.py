@@ -25,7 +25,12 @@ unprinted_designs = ['iphone case','robot pendant','dodecahedron']
 completed_models = []
 print_models(unprinted_designs,completed_models)
 show_completed_models(completed_models)
-
+print("#####################我是分割符#####################")
+#向函数内传递列表的副本，可以实现列表不被修改的情况下，打印所有作品
+print_models(unprinted_designs[:],completed_models)
+show_completed_models(completed_models)
+show_completed_models(unprinted_designs)
+print("#####################我是分割符#####################")
 #首先创建一个列表，其中包含一些要打印的设计
 unprinted_designs = ['iphone case','robot pendant','dodecahedron']
 completed_models = []
