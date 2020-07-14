@@ -1,3 +1,31 @@
+def print_models(unprinted_designs,completed_models):
+    """
+    模拟打印每个设计，直到没有未打印的设计为止
+    打印每个设计后，都将其移到completed_models
+    :param unprinted_designs:
+    未打印的设计列表
+    :param completed_models:
+    打印完成的设计列表
+    :return:
+    """
+    while unprinted_designs:
+        current_design = unprinted_designs.pop()
+        print('Printing Model:'+current_design)
+        completed_models.append(current_design)
+def show_completed_models(competed_models):
+    """
+    显示打印好的所有模型
+    :param competed_models:
+    :return:
+    """
+    print('\nThe following models have been printed:')
+    for completed_model in completed_models:
+        print(completed_model)
+unprinted_designs = ['iphone case','robot pendant','dodecahedron']
+completed_models = []
+print_models(unprinted_designs,completed_models)
+show_completed_models(completed_models)
+
 #首先创建一个列表，其中包含一些要打印的设计
 unprinted_designs = ['iphone case','robot pendant','dodecahedron']
 completed_models = []
