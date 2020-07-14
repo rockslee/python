@@ -1,3 +1,39 @@
+def make_car(origin,place,**car_info):
+    """
+    创建一个字典，其中包含我们知道的有关汽车的一切
+    :param origin:
+    :param place:
+    :param car_info:
+    :return:
+    """
+    info= {}
+    info['origin'] = origin
+    info['place'] = place
+    for key,value in car_info.items():
+        info[key]=value
+    return info
+car = make_car('subaru','outback',color='blue',tow_package=True)
+print(car)
+print("#####################我是分割符#####################")
+def build_profile(first,last,**user_info):
+    """
+    创建一个字典，其中包含我们知道的有关用户的一切
+    :param first:
+    :param last:
+    :param user_info:
+    :return:
+    """
+    profile = {}
+    profile['first_name'] = first
+    profile['last_name'] = last
+    for key,value in user_info.items():
+        profile[key] = value
+    return profile
+user_profile = build_profile('alber','einstein',
+                             location='princeton',
+                             field='physics')
+print(user_profile)
+print("#####################我是分割符#####################")
 def make_pizza(size,*toppings):
     """
     概述要制作的比萨
