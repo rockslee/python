@@ -1,3 +1,14 @@
+def show_magicians(magicians_name):
+    """
+    将所有魔术师的名字打印出来
+    :param magicians_name:
+    :return:
+    """
+    while magicians_name:
+        print('Printing Magicans name:'+magicians_name.pop())
+names = ['aaa','bbb','ccc','ddd']
+show_magicians(names)
+print("#####################我是分割符#####################")
 def print_models(unprinted_designs,completed_models):
     """
     模拟打印每个设计，直到没有未打印的设计为止
