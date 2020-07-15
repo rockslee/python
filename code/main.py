@@ -11,3 +11,9 @@ print("My dog's name is "+my_dog.name.title()+'.')
 print("My dog is "+str(my_dog.age)+' year old.')
 my_dog.roll_over()
 my_dog.sit()
+
+your_dog = Dog('flower',6)
+print("Your dog's name is "+your_dog.name.title()+\
+      '.'+" It's "+str(your_dog.age)+' years old.')
+your_dog.sit()
+your_dog.roll_over()
