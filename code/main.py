@@ -26,3 +26,7 @@ my_new_car.update_odometer(100)
 my_new_car.read_odometer()
 my_new_car.update_odometer(99)
 my_new_car.read_odometer()
+my_new_car.odometer_reading = 101
+my_new_car.read_odometer()
+my_new_car.increment_odometer(-10)
+my_new_car.read_odometer()
