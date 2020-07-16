@@ -1,5 +1,5 @@
 from function.function import  make_pizza,bulid_profile as bp
-from classes.classes import Dog,Car
+from classes.classes import Dog,Car,ElectricCar
 make_pizza(16,'pepperoni')
 make_pizza(12,'mushrooms','green peppers','extra cheese')
 user_profile=bp('rocks','lee',city='beijing',where='hebei')
@@ -30,3 +30,9 @@ my_new_car.odometer_reading = 101
 my_new_car.read_odometer()
 my_new_car.increment_odometer(-10)
 my_new_car.read_odometer()
+e_car = ElectricCar('tesla','model s','2020')
+print(e_car.get_descriptive_name())
+e_car.read_odometer()
+e_car.update_odometer(200)
+e_car.read_odometer()
+e_car.describe_battery()
