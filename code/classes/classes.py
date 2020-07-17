@@ -10,7 +10,17 @@ class  Dog():
     def roll_over(self):
         """模拟小狗被命令时打滚"""
         print(self.name.title() + ' rolled over.')
-
+class Odometer():
+    def __init__(self,energy=55):
+        self.energy = energy
+    def get_range(self):
+        if self.energy == 55:
+            range = 100
+        elif self.energy == 75:
+            range = 120
+        message = "This car can go approximately " + str(range)
+        message += " miles on a full charge"
+        print(message)
 class Car():
     """一次模拟汽车的简单尝试"""
     def __init__(self,make,model,year):
@@ -49,18 +59,10 @@ class Battery():
     def __init__(self,battery_size=70):
         """初始化电瓶的属性"""
         self.battery_size = battery_size
+        self.range = Odometer()
     def describe_battery(self):
         """打印一条描述电瓶容量的参数"""
         print("This car has a "+str(self.battery_size)+"-KWh battery.")
-    def get_range(self):
-        """打印一条消息，指出电瓶的续航里程"""
-        if self.battery_size == 70:
-            range = 240
-        elif self.battery_size == 85:
-            range = 270
-        message = "This car can go approximately "+str(range)
-        message += " miles on a full charge"
-        print(message)
 class ElectricCar(Car):
     """电动汽车的独特之处"""
     def __init__(self,make,model,year):
