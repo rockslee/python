@@ -1,10 +1,12 @@
-from classes.classes import Car,ElectricCar
+with open('file\pi_million_digits.txt') as file_object:
+    lines = file_object.readlines()
+pi_string = ''
+for line in lines:
+    pi_string += line.strip()
 
-my_new_car = Car('audi','a4',2016)
-print(my_new_car.get_descriptive_name())
-e_car = ElectricCar('tesla','model s','2020')
-print(e_car.get_descriptive_name())
-e_car.battery.range.modify_type(0)
-e_car.battery.range.modify_energy(75)
-e_car.battery.range.get_range()
-my_new_car.odometer_reading.get_range()
+while True:
+    b = input("输入您的生日，格式（MMDDYY）:")
+    if b in pi_string:
+        print("恭喜！！！您的生日在Π中！！！")
+    else:
+        print("您的生日没有在Π中")
