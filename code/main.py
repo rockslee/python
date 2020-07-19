@@ -1,12 +1,7 @@
-with open('file\pi_million_digits.txt') as file_object:
-    lines = file_object.readlines()
-pi_string = ''
-for line in lines:
-    pi_string += line.strip()
-
-while True:
-    b = input("输入您的生日，格式（MMDDYY）:")
-    if b in pi_string:
-        print("恭喜！！！您的生日在Π中！！！")
-    else:
-        print("您的生日没有在Π中")
+with open('file\love.txt','a') as file_object:
+    file_object.write("I love you.\n")
+    file_object.write("biu biu biu.\n")
+    file_object.write("123456789\n")
+with open('file\love.txt') as file:
+    contents = file.read()
+    print(contents)
