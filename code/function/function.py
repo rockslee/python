@@ -17,3 +17,7 @@ def bulid_profile(first,last,**user_info):
     for key,value in user_info.items():
         profile[key]=value
     return profile
+
+def get_formatted(first,last):
+    full_name = first+" "+last
+    return full_name.title()
